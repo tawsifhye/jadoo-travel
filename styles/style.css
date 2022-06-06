@@ -5,7 +5,24 @@ body {
 
 .hero {
     position: relative;
+
 }
+
+
+nav {
+    border: 2px solid red;
+
+    position: absolute;
+    z-index: 10;
+}
+
+nav ul {}
+
+nav ul li {}
+
+nav ul li a {}
+
+
 
 
 .hero .ellipse {
@@ -18,12 +35,13 @@ body {
     filter: blur(85px);
     left: -329px;
     top: -18px;
+    overflow: hidden;
+
 }
 
 .hero .shape {
     position: absolute;
     right: -100px;
     top: -109px;
+    overflow: hidden;
 }
-
-nav {}
