@@ -4,7 +4,7 @@ const mobileMenuButtonClose = document.getElementById("menu-close-button");
 
 mobileMenuButton.addEventListener('click', () => {
     mobileMenu.setAttribute("style", "left: 0");
-    mobileMenuButtonClose.setAttribute("style", "display: block");
+    mobileMenuButtonClose.setAttribute("style", "display: block !important");
     mobileMenuButton.setAttribute("style", "display: none !important");
 });
 

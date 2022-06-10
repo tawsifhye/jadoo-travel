@@ -123,7 +123,7 @@ nav button {
 #menu-close-button {
     font-size: 1.5rem;
     padding: .5em;
-    display: none;
+    display: none !important;
     cursor: pointer;
 }
 
@@ -188,5 +188,9 @@ nav button {
     #mobile-menu select {
         margin-top: 1em;
         text-align: center;
+    }
+
+    .hero .shape {
+        right: -410px;
     }
 }
