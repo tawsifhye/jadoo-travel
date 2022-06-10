@@ -137,7 +137,7 @@ nav button {
 
 .hero .shape {
     position: absolute;
-    right: -44px;
+    right: -38px;
     top: -159px;
     z-index: -1;
 
@@ -211,6 +211,26 @@ nav button {
     font-size: 1.5rem;
 }
 
+.hero-content .banner-image {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content .banner-image::after {
+    content: url("/assests/images/plane.png");
+    position: absolute;
+    top: -8px;
+    left: 134px;
+}
+
+.hero-content .banner-image::before {
+    content: url("/assests/images/plane.png");
+    position: absolute;
+    top: 22px;
+    right: 44px;
+    z-index: -1;
+}
 
 
 @media only screen and (max-width: 1280px) {
@@ -240,8 +260,11 @@ nav button {
         font-size: 3rem;
     }
 
-    .hero-content .banner-image {
-        width: 100%;
+
+
+    .hero-content .banner-image .plane {
+        display: inline-block;
+        margin-top: 550px;
     }
 
     .hero-title-section h1::after {
