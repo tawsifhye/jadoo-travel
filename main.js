@@ -1,0 +1,15 @@
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuButtonClose = document.getElementById("menu-close-button");
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.setAttribute("style", "left: 0");
+    mobileMenuButtonClose.setAttribute("style", "display: block");
+    mobileMenuButton.setAttribute("style", "display: none !important");
+});
+
+mobileMenuButtonClose.addEventListener('click', () => {
+    mobileMenu.setAttribute("style", "left: -100%");
+    mobileMenuButtonClose.setAttribute("style", "display: none");
+    mobileMenuButton.setAttribute("style", "display: block");
+})

@@ -11,7 +11,7 @@ body {
 .hero {
 
     position: relative;
-    border: 2px solid blue;
+
 
 }
 
@@ -33,7 +33,14 @@ nav {
     align-items: center;
 }
 
-
+#mobile-menu {
+    background-color: #fff1da9b;
+    width: 100%;
+    transition: .5s ease-in;
+    position: absolute;
+    left: -100%;
+    display: none;
+}
 
 nav ul {
     width: 50%;
@@ -42,13 +49,19 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
+nav ul li,
+#mobile-menu ul li {
     list-style: none;
-    justify-content: center;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
-nav ul li a {
+#mobile-menu ul {
+    padding: 0;
+}
+
+nav ul li a,
+#mobile-menu ul li a {
     text-decoration: none;
     color: #212832;
     font-weight: 700;
@@ -57,7 +70,9 @@ nav ul li a {
 }
 
 nav ul select,
-nav ul select option {
+nav ul select option,
+#mobile-menu select,
+#mobile-menu ul select option {
     border: none;
     text-decoration: none;
     color: #212832;
@@ -104,26 +119,74 @@ nav button {
 
 }
 
-nav i {
-    display: none !important;
-    padding: 5px;
+#mobile-menu-button,
+#menu-close-button {
+    font-size: 1.5rem;
+    padding: .5em;
+    display: none;
+    cursor: pointer;
 }
+
+#mobile-menu-button:hover,
+#menu-close-button:hover {
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    color: #fff;
+}
+
 
 @media only screen and (max-width: 1100px) {
     nav {
+
         justify-content: space-between;
     }
 
     .logo {
-        padding: 5px;
+        padding: .5em;
     }
 
-    nav i {
-        cursor: pointer;
+    #mobile-menu-button {
+
         display: block !important;
     }
 
+
+
     nav ul {
         display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        padding: 1em 0;
+    }
+
+    #mobile-menu ul {
+        text-align: center;
+    }
+
+    #mobile-menu ul li {
+
+        margin-top: .2em;
+        padding: 1rem 0px;
+    }
+
+    #mobile-menu ul li:hover {
+
+        background-color: #b9b3c7;
+    }
+
+    #mobile-menu ul li:hover a {
+        color: white;
+    }
+
+    #mobile-menu button {
+        background-color: transparent;
+        border: none;
+    }
+
+    #mobile-menu select {
+        margin-top: 1em;
+        text-align: center;
     }
 }
