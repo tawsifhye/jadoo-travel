@@ -27,3 +27,8 @@ openVideoModalButton.addEventListener('click', () => {
 modalCloseButton.addEventListener('click', () => {
     videoModal.setAttribute("style", "display: none")
 })
+videoModal.addEventListener('click', () => {
+    videoModal.setAttribute("style", "display: none")
+})
+
+
